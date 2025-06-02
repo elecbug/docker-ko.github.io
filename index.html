@@ -8,85 +8,36 @@
       src="https://kit.fontawesome.com/6984a5c98e.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Application Insights 스크립트는 main.ts에서 운영 환경에서만 동적으로 삽입됩니다. -->
     <link
       rel="icon"
       type="image/svg+xml"
       href="./imgs/logo/organization-logo.jpg"
     />
-    <script type="module" crossorigin src="./assets/index-CDWNYKM_.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CjMddur0.css">
+    <script type="module" crossorigin src="./assets/index-BuBe5Juf.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D50pntJb.css">
   </head>
   <body
-    class="h-full flex-col bg-background-light text-base dark:bg-background-dark dark:text-white"
+    class="bg-background-light dark:bg-background-dark h-full flex-col text-base dark:text-white"
   >
     <!-- 최상단 헤더 -->
-    <header class="w-full sticky top-0 z-20 h-12 px-6 text-white bg-[#086dd7]">
-      <div
-        class="max-w-[1920px] mx-auto flex lg:gap-8 gap-2 h-full items-center justify-between"
-      >
-        <div class="flex h-full items-center lg:gap-8 gap-2">
-          <div>
-            <a
-              ><img
-                src="./imgs/logo/docker-logo-white.svg"
-                alt="Docker Korea home page"
-                width="120"
-                height="24"
-            /></a>
-          </div>
-          <nav class="mt-1">
-            <ul class="flex text-sm md:text-base lg:gap-4">
-              <li
-                class="border-b-4 border-transparent hover:border-white/20 cursor-pointer"
-              >
-                <a
-                  class="block px-2 py-1 whitespace-nowrap"
-                  href="#/get-started"
-                  >Get started</a
-                >
-              </li>
-              <li
-                class="border-b-4 border-transparent hover:border-white/20 cursor-pointer"
-              >
-                <a class="block px-2 py-1 whitespace-nowrap" href="#/guides"
-                  >Guides</a
-                >
-              </li>
-              <li
-                class="border-b-4 border-transparent hover:border-white/20 cursor-pointer"
-              >
-                <a class="block px-2 py-1 whitespace-nowrap" href="#/manuals"
-                  >Manuals</a
-                >
-              </li>
-              <li
-                class="border-b-4 border-transparent hover:border-white/20 cursor-pointer"
-              >
-                <a class="block px-2 py-1 whitespace-nowrap" href="#/reference"
-                  >Reference</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+    <header-component></header-component>
 
-    <main class="flex w-full h-full">
+    <main class="flex h-full w-full">
       <!-- nav: 목차 나타내는 왼쪽 부분 사이드 -->
       <nav
         id="sidebar"
         style="scroll-behavior: smooth"
-        class="md:h-[calc(100vh-64px)] fixed md:sticky top-0 md:top-12 z-40 hidden h-screen flex-none overflow-y-auto overflow-x-hidden bg-[#f9f9fa] dark:bg-gray-dark-100 w-full md:z-auto md:block md:w-[240px] text-[12px]"
+        class="dark:bg-gray-dark-100 fixed top-0 z-40 hidden h-screen w-full flex-none overflow-x-hidden overflow-y-auto bg-[#f9f9fa] text-[12px] md:sticky md:top-12 md:z-auto md:block md:h-[calc(100vh-64px)] md:w-[240px]"
       >
-        <div class="z-50 w-full p-4 dark:bg-gray-dark-100 md:block">
-          <div id="nav__get-started" class="py-2 px-2 text-black">
+        <div class="dark:bg-gray-dark-100 z-50 w-full p-4 md:block">
+          <div id="nav__get-started" class="px-2 py-2 text-black">
             <div class="flex w-full items-center justify-between">
               <a
-                class="hover:text-blue-500 dark:hover:text-blue-500 text-black flex items-center"
+                class="flex items-center text-sm font-light text-black hover:text-blue-500 md:text-base dark:hover:text-blue-500"
                 href="#/get-started"
               >
-                <span class="p-0 m-0 pr-2">
+                <span class="m-0 p-0 pr-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
@@ -101,7 +52,7 @@
                 Get started
               </a>
               <button
-                class="hover:bg-gray-400 hover:dark:bg-gray-400 rounded w-7 h-7 inline-flex items-center justify-center"
+                class="inline-flex h-7 w-7 items-center justify-center rounded hover:cursor-pointer hover:bg-gray-400 hover:dark:bg-gray-400"
               >
                 <span>
                   <svg
@@ -130,17 +81,17 @@
               </button>
             </div>
           </div>
-          <hr class="m-2 text-gray-light-200 dark:text-gray-dark-300" />
+          <hr class="text-gray-light-200 dark:text-gray-dark-300 m-2" />
           <div
             id="nav__content"
-            class="flex flex-col text-black text-sm md:text-base font-light"
+            class="flex flex-col text-sm font-light text-black md:text-base"
           >
             <ul>
               <li
                 class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
               >
                 <a
-                  class="py-2 w-full truncate block"
+                  class="block w-full truncate py-2"
                   href="#/get-started/get-docker"
                   >Get Docker</a
                 >
@@ -149,17 +100,17 @@
                 class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
               >
                 <a
-                  class="py-2 w-full truncate block"
+                  class="block w-full truncate py-2"
                   href="#/get-started/docker-overview"
                   >What is Docker?</a
                 >
               </li>
               <li>
                 <div
-                  class="rounded px-2 w-full flex items-center justify-between"
+                  class="flex w-full items-center justify-between rounded px-2"
                   id="section__wrapper"
                 >
-                  <div class="w-full py-2 truncate">
+                  <div class="w-full truncate py-2">
                     <a
                       class="block select-none hover:text-blue-500 hover:dark:text-blue-500"
                       href="#/get-started/introduction"
@@ -167,7 +118,7 @@
                     >
                   </div>
                   <button
-                    class="hover:bg-gray-400 hover:dark:bg-gray-400 rounded w-7 h-7 inline-flex items-center justify-center"
+                    class="inline-flex h-7 w-7 items-center justify-center rounded hover:cursor-pointer hover:bg-gray-400 hover:dark:bg-gray-400"
                   >
                     <span>
                       <svg
@@ -200,7 +151,7 @@
                     class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                   >
                     <a
-                      class="py-2 w-full truncate block"
+                      class="block w-full truncate py-2"
                       href="#/get-started/introduction/get-docker-desktop"
                       title="Get Docker Desktop"
                       >Get Docker Desktop
@@ -210,7 +161,7 @@
                     class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                   >
                     <a
-                      class="py-2 w-full truncate block"
+                      class="block w-full truncate py-2"
                       href="#/get-started/introduction/develop-with-containers"
                       title="Develop with containers"
                       >Develop with containers
@@ -220,8 +171,8 @@
                     class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                   >
                     <a
-                      class="py-2 w-full truncate block"
-                      href="#/get-started/introduction/develop-with-containers/build-and-push-first-image"
+                      class="block w-full truncate py-2"
+                      href="#/get-started/introduction/build-and-push-first-image"
                       title="Build and push your first image"
                       >Build and push your first image
                     </a>
@@ -230,7 +181,7 @@
                     class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                   >
                     <a
-                      class="py-2 w-full truncate block"
+                      class="block w-full truncate py-2"
                       href="#/get-started/introduction/whats-next"
                       title="What's next"
                       >What's next
@@ -240,10 +191,10 @@
               </li>
               <li>
                 <div
-                  class="rounded px-2 w-full flex items-center justify-between"
+                  class="flex w-full items-center justify-between rounded px-2"
                   id="section__wrapper"
                 >
-                  <div class="w-full py-2 truncate">
+                  <div class="w-full truncate py-2">
                     <button
                       class="w-full text-left select-none hover:text-blue-500 hover:dark:text-blue-500"
                     >
@@ -251,7 +202,7 @@
                     </button>
                   </div>
                   <button
-                    class="hover:bg-gray-400 hover:dark:bg-gray-400 rounded w-7 h-7 inline-flex items-center justify-center"
+                    class="inline-flex h-7 w-7 items-center justify-center rounded hover:cursor-pointer hover:bg-gray-400 hover:dark:bg-gray-400"
                   >
                     <span>
                       <svg
@@ -282,10 +233,10 @@
                 <ul class="ml-3 hidden">
                   <li>
                     <div
-                      class="rounded px-2 w-full flex items-center justify-between"
+                      class="flex w-full items-center justify-between rounded px-2"
                       id="section__wrapper"
                     >
-                      <div class="w-full py-2 truncate">
+                      <div class="w-full truncate py-2">
                         <button
                           class="w-full text-left select-none hover:text-blue-500 hover:dark:text-blue-500"
                         >
@@ -293,7 +244,7 @@
                         </button>
                       </div>
                       <button
-                        class="hover:bg-gray-400 hover:dark:bg-gray-400 rounded w-7 h-7 inline-flex items-center justify-center"
+                        class="inline-flex h-7 w-7 items-center justify-center rounded hover:cursor-pointer hover:bg-gray-400 hover:dark:bg-gray-400"
                       >
                         <span>
                           <svg
@@ -326,7 +277,7 @@
                         class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                       >
                         <a
-                          class="py-2 w-full truncate block"
+                          class="block w-full truncate py-2"
                           href="#/get-started/docker-concepts/the-basics/what-is-a-container"
                           title="What is a container?"
                           >What is a container?</a
@@ -336,7 +287,7 @@
                         class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                       >
                         <a
-                          class="py-2 w-full truncate block"
+                          class="block w-full truncate py-2"
                           href="#/get-started/docker-concepts/the-basics/what-is-an-image"
                           title="What is an image?"
                           >What is an image?</a
@@ -346,7 +297,7 @@
                         class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                       >
                         <a
-                          class="py-2 w-full truncate block"
+                          class="block w-full truncate py-2"
                           href="#/get-started/docker-concepts/the-basics/what-is-a-registry"
                           title="What is a registry?"
                           >What is a registry?</a
@@ -356,7 +307,7 @@
                         class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                       >
                         <a
-                          class="py-2 w-full truncate block"
+                          class="block w-full truncate py-2"
                           href="#/get-started/docker-concepts/the-basics/what-is-docker-compose"
                           title="What is Docker Compose?"
                           >What is Docker Compose?</a
@@ -367,10 +318,10 @@
 
                   <li>
                     <div
-                      class="rounded px-2 w-full flex items-center justify-between"
+                      class="flex w-full items-center justify-between rounded px-2"
                       id="section__wrapper"
                     >
-                      <div class="w-full py-2 truncate">
+                      <div class="w-full truncate py-2">
                         <button
                           class="w-full text-left select-none hover:text-blue-500 hover:dark:text-blue-500"
                         >
@@ -378,7 +329,7 @@
                         </button>
                       </div>
                       <button
-                        class="hover:bg-gray-400 hover:dark:bg-gray-400 rounded w-7 h-7 inline-flex items-center justify-center"
+                        class="inline-flex h-7 w-7 items-center justify-center rounded hover:cursor-pointer hover:bg-gray-400 hover:dark:bg-gray-400"
                       >
                         <span>
                           <svg
@@ -411,7 +362,7 @@
                         class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                       >
                         <a
-                          class="py-2 w-full truncate block"
+                          class="block w-full truncate py-2"
                           href="#/get-started/docker-concepts/building-images/understanding-image-layers"
                           title="Understanding the image layers"
                           >Understanding the image layers</a
@@ -421,7 +372,7 @@
                         class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                       >
                         <a
-                          class="py-2 w-full truncate block"
+                          class="block w-full truncate py-2"
                           href="#/get-started/docker-concepts/building-images/writing-a-dockerfile"
                           title="Writing a Dockerfile"
                           >Writing a Dockerfile</a
@@ -431,7 +382,7 @@
                         class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                       >
                         <a
-                          class="py-2 w-full truncate block"
+                          class="block w-full truncate py-2"
                           href="#/get-started/docker-concepts/building-images/build-tag-and-publish-an-image"
                           title="Build, tag, and publish an image"
                           >Build, tag, and publish an image</a
@@ -441,7 +392,7 @@
                         class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                       >
                         <a
-                          class="py-2 w-full truncate block"
+                          class="block w-full truncate py-2"
                           href="#/get-started/docker-concepts/building-images/using-the-build-cache"
                           title="Using the build cache"
                           >Using the build cache</a
@@ -451,7 +402,7 @@
                         class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                       >
                         <a
-                          class="py-2 w-full truncate block"
+                          class="block w-full truncate py-2"
                           href="#/get-started/docker-concepts/building-images/multi-stage-builds"
                           title="Multi-stage builds"
                           >Multi-stage builds</a
@@ -462,10 +413,10 @@
 
                   <li>
                     <div
-                      class="rounded px-2 w-full flex items-center justify-between"
+                      class="flex w-full items-center justify-between rounded px-2"
                       id="section__wrapper"
                     >
-                      <div class="w-full py-2 truncate">
+                      <div class="w-full truncate py-2">
                         <button
                           class="w-full text-left select-none hover:text-blue-500 hover:dark:text-blue-500"
                         >
@@ -473,7 +424,7 @@
                         </button>
                       </div>
                       <button
-                        class="hover:bg-gray-400 hover:dark:bg-gray-400 rounded w-7 h-7 inline-flex items-center justify-center"
+                        class="inline-flex h-7 w-7 items-center justify-center rounded hover:cursor-pointer hover:bg-gray-400 hover:dark:bg-gray-400"
                       >
                         <span>
                           <svg
@@ -506,7 +457,7 @@
                         class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                       >
                         <a
-                          class="py-2 w-full truncate block"
+                          class="block w-full truncate py-2"
                           href="#/get-started/docker-concepts/running-containers/publishing-ports"
                           title="Publishing and exposing ports"
                           >Publishing and exposing ports</a
@@ -516,7 +467,7 @@
                         class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                       >
                         <a
-                          class="py-2 w-full truncate block"
+                          class="block w-full truncate py-2"
                           href="#/get-started/docker-concepts/running-containers/overriding-container-defaults"
                           title="Overriding container defaults"
                           >Overriding container defaults</a
@@ -526,7 +477,7 @@
                         class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                       >
                         <a
-                          class="py-2 w-full truncate block"
+                          class="block w-full truncate py-2"
                           href="#/get-started/docker-concepts/running-containers/persisting-container-data"
                           title="Persisting container data"
                           >Persisting container data</a
@@ -536,7 +487,7 @@
                         class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                       >
                         <a
-                          class="py-2 w-full truncate block"
+                          class="block w-full truncate py-2"
                           href="#/get-started/docker-concepts/running-containers/sharing-local-files"
                           title="Sharing local files with containers"
                           >Sharing local files with containers</a
@@ -546,7 +497,7 @@
                         class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                       >
                         <a
-                          class="py-2 w-full truncate block"
+                          class="block w-full truncate py-2"
                           href="#/get-started/docker-concepts/running-containers/multi-container-applications"
                           title="Multi-container applications"
                           >Multi-container applications</a
@@ -558,10 +509,10 @@
               </li>
               <li>
                 <div
-                  class="rounded px-2 w-full flex items-center justify-between"
+                  class="flex w-full items-center justify-between rounded px-2"
                   id="section__wrapper"
                 >
-                  <div class="w-full py-2 truncate">
+                  <div class="w-full truncate py-2">
                     <a
                       class="block select-none hover:text-blue-500 hover:dark:text-blue-500"
                       href="#/get-started/docker-workshop"
@@ -569,7 +520,7 @@
                     >
                   </div>
                   <button
-                    class="hover:bg-gray-400 hover:dark:bg-gray-400 rounded w-7 h-7 inline-flex items-center justify-center"
+                    class="inline-flex h-7 w-7 items-center justify-center rounded hover:cursor-pointer hover:bg-gray-400 hover:dark:bg-gray-400"
                   >
                     <span>
                       <svg
@@ -602,8 +553,8 @@
                     class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                   >
                     <a
-                      class="py-2 w-full truncate block"
-                      href="#/get-started/workshop/02_our_app/"
+                      class="block w-full truncate py-2"
+                      href="#/get-started/workshop/02_our_app"
                       title="Part 1: Containerize an application"
                       >Part 1: Containerize an application</a
                     >
@@ -612,8 +563,8 @@
                     class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                   >
                     <a
-                      class="py-2 w-full truncate block"
-                      href="#/get-started/workshop/03_updating_app/"
+                      class="block w-full truncate py-2"
+                      href="#/get-started/workshop/03_updating_app"
                       title="Part 2: Update the application"
                       >Part 2: Update the application</a
                     >
@@ -622,8 +573,8 @@
                     class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                   >
                     <a
-                      class="py-2 w-full truncate block"
-                      href="#/get-started/workshop/04_sharing_app/"
+                      class="block w-full truncate py-2"
+                      href="#/get-started/workshop/04_sharing_app"
                       title="Part 3: Share the application"
                       >Part 3: Share the application</a
                     >
@@ -632,8 +583,8 @@
                     class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                   >
                     <a
-                      class="py-2 w-full truncate block"
-                      href="#/get-started/workshop/05_persisting_data/"
+                      class="block w-full truncate py-2"
+                      href="#/get-started/workshop/05_persisting_data"
                       title="Part 4: Persist the DB"
                       >Part 4: Persist the DB</a
                     >
@@ -642,8 +593,8 @@
                     class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                   >
                     <a
-                      class="py-2 w-full truncate block"
-                      href="#/get-started/workshop/06_bind_mounts/"
+                      class="block w-full truncate py-2"
+                      href="#/get-started/workshop/06_bind_mounts"
                       title="Part 5: Use bind mounts"
                       >Part 5: Use bind mounts</a
                     >
@@ -652,8 +603,8 @@
                     class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                   >
                     <a
-                      class="py-2 w-full truncate block"
-                      href="#/get-started/workshop/07_multi_container/"
+                      class="block w-full truncate py-2"
+                      href="#/get-started/workshop/07_multi_container"
                       title="Part 6: Multi-container apps"
                       >Part 6: Multi-container apps</a
                     >
@@ -662,8 +613,8 @@
                     class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                   >
                     <a
-                      class="py-2 w-full truncate block"
-                      href="#/get-started/workshop/08_using_compose/"
+                      class="block w-full truncate py-2"
+                      href="#/get-started/workshop/08_using_compose"
                       title="Part 7: Use Docker Compose"
                       >Part 7: Use Docker Compose</a
                     >
@@ -672,8 +623,8 @@
                     class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                   >
                     <a
-                      class="py-2 w-full truncate block"
-                      href="#/get-started/workshop/09_image_best/"
+                      class="block w-full truncate py-2"
+                      href="#/get-started/workshop/09_image_best"
                       title="Part 8: Image-building best practices"
                       >Part 8: Image-building best practices</a
                     >
@@ -682,8 +633,8 @@
                     class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
                   >
                     <a
-                      class="py-2 w-full truncate block"
-                      href="#/get-started/workshop/10_what_next/"
+                      class="block w-full truncate py-2"
+                      href="#/get-started/workshop/10_what_next"
                       title="Part 9: What next"
                       >Part 9: What next</a
                     >
@@ -694,7 +645,7 @@
                 class="rounded px-2 hover:text-blue-500 hover:dark:text-blue-500"
               >
                 <a
-                  class="py-2 w-full truncate block"
+                  class="block w-full truncate py-2"
                   href="#/get-started/resources"
                   >Educational resources</a
                 >
@@ -707,28 +658,19 @@
       <!-- content: (마크다운 파일) 표시 공간 : 중간 부분 -->
       <div
         id="content"
-        class="w-full min-w-0 bg-white p-8 dark:bg-background-dark"
+        class="dark:bg-background-dark w-full min-w-0 bg-white p-8"
       ></div>
 
       <!-- aside: 오른쪽 부분 사이드 -->
       <aside
         id="aside-toc"
-        class="sticky top-12 h-full min-w-80 overflow-y-auto py-4 px-2 lg:block"
+        class="sticky top-12 h-full min-w-80 overflow-y-auto px-2 py-4 lg:block"
       >
-        <div id="toc" class="text-black text-[16px]"></div>
+        <div id="toc" class="text-[16px] text-black"></div>
       </aside>
     </main>
 
     <!-- 푸터 -->
-    <footer
-      class="w-screen text-center py-4 bg-[#086dd7] text-white relative bottom-0"
-    >
-      © 2025 Docker 한국어 문서 프로젝트 |
-      <a
-        href="https://github.com/docker-ko/docker-ko.github.io"
-        class="hover:underline text-[#b0c4de]"
-        >GitHub</a
-      >
-    </footer>
+    <footer-component></footer-component>
   </body>
 </html>
