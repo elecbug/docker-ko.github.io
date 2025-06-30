@@ -2,10 +2,12 @@
 
 <div class="youtube-video">
    <iframe 
-    src="https://www.youtube.com/embed/2WDl10Wv5rs" 
-    frameborder="0" 
+    src="https://www.youtube-nocookie.com/embed/2WDl10Wv5rs?rel=0&modestbranding=1&playsinline=1" 
     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen
+    loading="lazy"
+    title="What is a registry?"
+    referrerpolicy="strict-origin-when-cross-origin"
    >
   </iframe>
 </div>
@@ -126,4 +128,4 @@ Dockerfile의 세부 사항에 대해서는 나중에 자세히 설명할 테니
 
 이제 컨테이너와 이미지의 기본을 이해했으니 Docker Compose에 대해 배울 준비가 되었습니다.
 
-[What is Docker compose?](#/get-started/docker-concepts/the-basics/what-is-docker-compose)
+<button-component href="#/get-started/docker-concepts/the-basics/what-is-docker-compose" title="What is Docker compose?" />

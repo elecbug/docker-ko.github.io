@@ -2,10 +2,12 @@
 
 <div class="youtube-video">
    <iframe 
-    src="https://www.youtube.com/embed/7ge1s5nAa34" 
-    frameborder="0" 
+    src="https://www.youtube-nocookie.com/embed/7ge1s5nAa34?rel=0&modestbranding=1&playsinline=1" 
     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen
+    loading="lazy"
+    title="Build and push your first image"
+    referrerpolicy="strict-origin-when-cross-origin"
    >
   </iframe>
 </div>
@@ -123,4 +125,4 @@ Docker 이미지를 공유하기 위해서는 이를 저장할 공간이 필요�
 
 이제 이미지를 빌드했으니, 왜 개발자로서 도커에 대해 더 학습해야 하고 도커가 여러분의 일상 업무에 어떻게 도움이 될지 논의해 보겠습니다.
 
-[What's Next](/#/get-started/introduction/whats-next)
+<button-component href="/#/get-started/introduction/whats-next" title="What's Next" />

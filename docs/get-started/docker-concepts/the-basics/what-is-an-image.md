@@ -2,10 +2,12 @@
 
 <div class="youtube-video">
    <iframe 
-    src="https://www.youtube.com/embed/NyvT9REqLe4" 
-    frameborder="0" 
+    src="https://www.youtube-nocookie.com/embed/NyvT9REqLe4?rel=0&modestbranding=1&playsinline=1" 
     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen
+    loading="lazy"
+    title="What is an image?"
+    referrerpolicy="strict-origin-when-cross-origin"
    >
   </iframe>
 </div>
@@ -76,4 +78,4 @@
 
 이제 이미지의 기본을 배웠으니 레지스트리를 통해 이미지를 배포하는 방법을 배울 차례입니다.
 
-[What is a registry?](#/get-started/docker-concepts/the-basics/what-is-a-registry)
+<button-component href="/#/get-started/docker-concepts/the-basics/what-is-a-registry" title="What is a registry?" />

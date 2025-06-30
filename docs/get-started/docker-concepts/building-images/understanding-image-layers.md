@@ -2,10 +2,12 @@
 
 <div class="youtube-video">
    <iframe 
-    src="https://www.youtube.com/embed/wJwqtAkmtQA" 
-    frameborder="0" 
+    src="https://www.youtube-nocookie.com/embed/wJwqtAkmtQA?rel=0&modestbranding=1&playsinline=1"
     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen
+    loading="lazy"
+    title="Understanding the image layers"
+    referrerpolicy="strict-origin-when-cross-origin"
    >
   </iframe>
 </div>
@@ -185,4 +187,4 @@
 
 대부분의 이미지 빌드는 `docker container commit`을 사용하지 않고, Dockerfile을 사용합니다. Dockerfile은 이러한 단계를 자동화합니다.
 
-[Writing a Dockerfile](#/get-started/docker-concepts/building-images/writing-a-dockerfile)
+<button-component href="#/get-started/docker-concepts/building-images/writing-a-dockerfile" title="Writing a Dockerfile" />

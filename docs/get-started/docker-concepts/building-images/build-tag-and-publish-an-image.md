@@ -2,10 +2,12 @@
 
 <div class="youtube-video">
    <iframe 
-    src="https://www.youtube.com/embed/chiiGLlYRlY" 
-    frameborder="0" 
+    src="https://www.youtube-nocookie.com/embed/chiiGLlYRlY?rel=0&modestbranding=1&playsinline=1" 
     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen
+    loading="lazy"
+    title="Build, tag, and push an image"
+    referrerpolicy="strict-origin-when-cross-origin"
    >
   </iframe>
 </div>
@@ -206,4 +208,4 @@ docker push my-username/my-image
 
 이제 이미지를 빌드하고 게시하는 방법을 알았으니 Docker 빌드 캐시를 사용하여 빌드 프로세스 속도를 높이는 방법을 알아보겠습니다.
 
-[Using the build cache](#/get-started/docker-concepts/building-images/using-the-build-cache)
+<button-component href="#/get-started/docker-concepts/building-images/using-the-build-cache" title="Using the build cache" />

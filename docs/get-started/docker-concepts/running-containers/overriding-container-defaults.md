@@ -2,10 +2,12 @@
 
 <div class="youtube-video">
    <iframe 
-    src="https://www.youtube.com/embed/PFszWK3BB8I" 
-    frameborder="0" 
+    src="https://www.youtube-nocookie.com/embed/PFszWK3BB8I?rel=0&modestbranding=1&playsinline=1" 
     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen
+    loading="lazy"
+    title="Overriding container defaults"
+    referrerpolicy="strict-origin-when-cross-origin"
    >
   </iframe>
 </div>
@@ -200,4 +202,4 @@ $ docker run -e POSTGRES_PASSWORD=secret postgres docker-entrypoint.sh -h localh
 
 이제 컨테이너 기본값을 재정의하는 방법을 알아보았으니, 컨테이너 데이터를 유지하는 방법을 알아보겠습니다.
 
-[Persisting container data](#/get-started/docker-concepts/running-containers/persisting-container-data)
+<button-component href="#/get-started/docker-concepts/running-containers/persisting-container-data" title="Persisting container data" />

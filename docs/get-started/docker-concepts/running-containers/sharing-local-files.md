@@ -2,10 +2,12 @@
 
 <div class="youtube-video">
    <iframe 
-    src="https://www.youtube.com/embed/2dAzsVg3Dek" 
-    frameborder="0" 
+    src="https://www.youtube-nocookie.com/embed/2dAzsVg3Dek?rel=0&modestbranding=1&playsinline=1" 
     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen
+    loading="lazy"
+    title="Sharing local files with containers"
+    referrerpolicy="strict-origin-when-cross-origin"
    >
   </iframe>
 </div>
@@ -171,4 +173,4 @@ $ docker run -v HOST-DIRECTORY:/CONTAINER-DIRECTORY:rw nginx
 
 이제 컨테이너와 로컬 파일을 공유하는 방법을 알았으니, 다중 컨테이너 애플리케이션에 대해 알아볼 차례입니다.
 
-[Multi-container applications](#/get-started/docker-concepts/running-containers/multi-container-applications)
+<button-component href="/#/get-started/docker-concepts/running-containers/multi-container-applications" title="Multi-container applications" />

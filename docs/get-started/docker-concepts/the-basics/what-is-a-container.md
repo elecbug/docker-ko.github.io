@@ -2,10 +2,12 @@
 
 <div class="youtube-video">
    <iframe 
-    src="https://www.youtube.com/embed/W1kWqFkiu7k" 
-    frameborder="0" 
+    src="https://www.youtube-nocookie.com/embed/W1kWqFkiu7k?rel=0&modestbranding=1&playsinline=1" 
     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen
+    loading="lazy"
+    title="What is a container?"
+    referrerpolicy="strict-origin-when-cross-origin"
    >
   </iframe>
 </div>
@@ -102,4 +104,4 @@ React, Python API, PostgreSQL DB를 주요 기술 스택으로 사용한다고 �
 
 이제 도커 컨테이너의 기본을 배웠으니 도커 이미지에 대해 배울 차례입니다.
 
-[What is an image?](#/get-started/docker-concepts/the-basics/what-is-an-image)
+<button-component href="#/get-started/docker-concepts/the-basics/what-is-an-image" title="What is an image?" />
